@@ -1,0 +1,11 @@
+:root {
+  /* reset-global */
+  --reset-global-background: #060d1d;
+  --reset-global-color: white;
+
+  /* button */
+  --background-button: #3b82f6;
+  --background-button-color: white;
+  --border-radius: 12px;
+  --background-button-color-hover: #2563eb;
+}
