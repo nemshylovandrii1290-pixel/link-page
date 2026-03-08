@@ -24,7 +24,7 @@
 }
 
 .tagline {
-  font-size: 1.25rem;
+  font-size: 24px;
   margin-bottom: 24px;
   display: flex;
   justify-content: center;
@@ -129,3 +129,5 @@
 .logo:hover{
   transform:scale(1.05);
 }
+
+
