@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  transition: background 0.28s ease, color 0.28s ease;
+  transition: color 0.2s ease;
   background:
     radial-gradient(circle at 8% 12%, rgba(58, 119, 232, 0.26), transparent 34%),
     radial-gradient(circle at 85% 18%, rgba(31, 88, 177, 0.21), transparent 40%),
@@ -50,5 +50,11 @@ body[data-theme="light"] {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  body {
+    transition: none;
   }
 }

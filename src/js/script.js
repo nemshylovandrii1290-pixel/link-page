@@ -5,6 +5,8 @@ const themeLabel = document.getElementById("theme-label");
 const themeIcon = document.getElementById("theme-icon");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
+let themeSwitchLock = false;
+
 if (yearNode) {
   yearNode.textContent = String(new Date().getFullYear());
 }
@@ -31,11 +33,31 @@ const storedTheme = localStorage.getItem("corevia-theme");
 const initialTheme = storedTheme || (prefersDarkScheme.matches ? "dark" : "light");
 applyTheme(initialTheme);
 
+function switchThemeWithMotion(nextTheme) {
+  if (themeSwitchLock) {
+    return;
+  }
+
+  themeSwitchLock = true;
+  bodyNode.classList.add("theme-animating");
+  themeToggle?.classList.add("is-busy");
+
+  requestAnimationFrame(() => {
+    applyTheme(nextTheme);
+    localStorage.setItem("corevia-theme", nextTheme);
+
+    window.setTimeout(() => {
+      bodyNode.classList.remove("theme-animating");
+      themeToggle?.classList.remove("is-busy");
+      themeSwitchLock = false;
+    }, 220);
+  });
+}
+
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
     const nextTheme = bodyNode.dataset.theme === "dark" ? "light" : "dark";
-    applyTheme(nextTheme);
-    localStorage.setItem("corevia-theme", nextTheme);
+    switchThemeWithMotion(nextTheme);
   });
 }
 

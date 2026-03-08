@@ -57,7 +57,10 @@
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.16s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+  min-width: 106px;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
   position: absolute;
   top: calc(env(safe-area-inset-top) + 20px);
   right: calc(env(safe-area-inset-right) + 24px);
