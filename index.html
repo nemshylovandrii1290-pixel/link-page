@@ -2,60 +2,70 @@
 <html lang="en" class="html">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Corevia - building modern software and projects.">
-  <link rel="icon" href="src/images/logo/corevia-logo.png" type="image/png">
+  <link rel="icon" href="src/images/logo/corevia-logo-gradient.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
   <title>Corevia</title>
   <link rel="stylesheet" href="src/css/import.css">
 </head>
-<body class="body">
-
+<body class="body" data-theme="dark">
   <div class="container">
-
     <div class="divider">
-
       <header class="header">
+        <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch color theme">
+          <i class="fa-regular fa-sun" id="theme-icon" aria-hidden="true"></i>
+          <span id="theme-label">Light</span>
+        </button>
+
         <div class="brand">
           <img class="logo" src="src/images/logo/corevia-logo-gradient.svg" alt="Corevia logo">
           <h1 class="title">Corevia</h1>
         </div>
       </header>
+
       <main class="content">
         <p class="tagline">Building modern software and digital projects.</p>
-        <p class="subtagline">Open source developer.</p>
+        <p class="subtagline">Open source developer. Product-minded engineering.</p>
+
         <nav class="links" aria-label="Corevia social media links">
           <ul class="links-list">
             <li>
               <a class="button" href="https://github.com/nemshylovandrii1290-pixel" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i> <span>GitHub</span>
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <span>GitHub</span>
               </a>
             </li>
             <li>
               <a class="button" href="https://t.me/coreviaofficialchannel" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-telegram"></i> <span>Telegram</span>
+                <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                <span>Telegram</span>
               </a>
             </li>
             <li>
               <a class="button" href="https://www.instagram.com/neishilovandriy/?__pwa=1" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-instagram"></i> <span>Instagram</span>
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                <span>Instagram</span>
               </a>
             </li>
             <li>
-              <a class="button" href="mailto:nemshylovandrii1290@gmail.com" target="_blank" rel="noopener noreferrer">
-                <i class="fa-regular fa-envelope"></i> <span>Gmail</span>
+              <a class="button" href="mailto:nemshylovandrii1290@gmail.com" rel="noopener noreferrer">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                <span>Email</span>
               </a>
             </li>
           </ul>
         </nav>
       </main>
+
       <footer class="footer">
-        <p>© 2026 Corevia</p>
+        <p>&copy; <span id="year">2026</span> Corevia</p>
         <p class="footer-sub">Building modern software</p>
       </footer>
-
     </div>
-
   </div>
 
   <script src="src/js/script.js"></script>

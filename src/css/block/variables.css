@@ -1,14 +1,43 @@
 :root {
-  /* reset-global */
-  --reset-global-background: #060d1d;
-  --reset-global-color: white;
+  --bg-base: #071324;
+  --bg-secondary: #0a1d36;
+  --text-primary: #ecf3ff;
+  --text-secondary: #adc2de;
+  --line-soft: rgba(173, 194, 222, 0.2);
 
-  /* button */
-  --background-button: #3b82f6;
-  --background-button-color: white;
-  --border-radius: 12px;
-  --background-button-color-hover: #2563eb;
+  --panel-surface: rgba(6, 18, 36, 0.72);
+  --panel-glow: linear-gradient(130deg, rgba(118, 169, 255, 0.08), transparent 40%);
 
-  /* background-gradient */
-  --background-gradient: linear-gradient(135deg,#3b82f6,#0b41b6);
+  --button-surface: linear-gradient(135deg, #2a6fde 0%, #1453b8 55%, #0f3b87 100%);
+  --button-hover: linear-gradient(135deg, #3680f2 0%, #1b61cf 55%, #12479f 100%);
+  --button-text: #f7fbff;
+
+  --toggle-bg: rgba(197, 220, 255, 0.12);
+  --toggle-text: #e5f0ff;
+
+  --shadow-soft: 0 20px 50px rgba(2, 11, 26, 0.48);
+  --shadow-button: 0 14px 24px rgba(17, 61, 131, 0.35);
+  --radius-lg: 24px;
+  --radius-md: 14px;
+}
+
+body[data-theme="light"] {
+  --bg-base: #dbeafe;
+  --bg-secondary: #eff6ff;
+  --text-primary: #0f2342;
+  --text-secondary: #375170;
+  --line-soft: rgba(34, 67, 112, 0.18);
+
+  --panel-surface: rgba(255, 255, 255, 0.84);
+  --panel-glow: linear-gradient(130deg, rgba(131, 172, 235, 0.26), transparent 45%);
+
+  --button-surface: linear-gradient(135deg, #2563eb 0%, #1d4ed8 60%, #153eaa 100%);
+  --button-hover: linear-gradient(135deg, #2f6ef2 0%, #2559dd 60%, #1a46b9 100%);
+  --button-text: #ffffff;
+
+  --toggle-bg: rgba(37, 99, 235, 0.15);
+  --toggle-text: #173a74;
+
+  --shadow-soft: 0 20px 42px rgba(66, 103, 150, 0.2);
+  --shadow-button: 0 12px 24px rgba(31, 89, 176, 0.24);
 }
