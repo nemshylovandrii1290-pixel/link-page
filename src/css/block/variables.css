@@ -8,4 +8,7 @@
   --background-button-color: white;
   --border-radius: 12px;
   --background-button-color-hover: #2563eb;
+
+  /* background-gradient */
+  --background-gradient: linear-gradient(135deg,#3b82f6,#0b41b6);
 }
