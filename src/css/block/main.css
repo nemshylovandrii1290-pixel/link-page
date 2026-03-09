@@ -133,6 +133,24 @@
   margin-top: 36px;
 }
 
+.links-group {
+  margin-top: 28px;
+}
+
+.links-group:first-child {
+  margin-top: 0;
+}
+
+.links-title {
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
 .links-list {
   list-style: none;
   margin: 0 auto;
@@ -171,7 +189,7 @@
   text-decoration: none;
   color: var(--button-text);
   font-weight: 700;
-  padding: 17px 18px;
+  padding: 18px 20px;
   border-radius: var(--radius-md);
   border: 1px solid rgba(202, 225, 255, 0.3);
   background: linear-gradient(135deg, #3d88ff 0%, #1e63d6 45%, #124ba6 100%);
@@ -183,6 +201,22 @@
   touch-action: manipulation;
   position: relative;
   overflow: hidden;
+}
+
+.website .button {
+  border-color: rgba(173, 211, 255, 0.5);
+  box-shadow:
+    0 16px 28px rgba(17, 61, 131, 0.42),
+    0 0 0 1px rgba(186, 220, 255, 0.28),
+    0 0 24px rgba(59, 130, 246, 0.5);
+}
+
+.website .button:hover,
+.website .button:focus-visible {
+  box-shadow:
+    0 20px 34px rgba(15, 54, 118, 0.48),
+    0 0 0 1px rgba(194, 226, 255, 0.35),
+    0 0 30px rgba(72, 142, 255, 0.6);
 }
 
 .button i {
@@ -297,7 +331,7 @@
   }
 
   .button {
-    min-height: 56px;
+    min-height: 58px;
     padding: 15px;
   }
 }
