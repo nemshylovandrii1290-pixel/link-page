@@ -1,4 +1,4 @@
-* {
+﻿* {
   box-sizing: border-box;
 }
 
@@ -57,4 +57,16 @@ body[data-theme="light"] {
   body {
     transition: none;
   }
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.coming-soon {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
